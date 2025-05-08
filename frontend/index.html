@@ -1,45 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>Online Bookstore</title>
-        
-        <link rel="stylesheet" href="./css/style.css" />
-        <script src="./js/main.js"></script>
-    </head>
+<head>
+    <title>Novella</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  
+    <script src="js/script.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/animation.js"></script>
+</head>
+
 <body>
+    <header>
+        <h1>NOVELLA</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Log in</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <header>
-    <h1>Welcome to Our Bookstore</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="books.html">Books</a></li>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="register.html">Register</a></li>
-      </ul>
-    </nav>
-  </header>
+    <main>
+        <section class="banner">
+            <div class="banner-content">
+                <h1>Summer Book Sale – Up to 50% Off!</h1>
+                <p>Discover bestsellers, new arrivals, and exclusive collections curated for book lovers.</p>
+                <a href="#featured-books" class="cta-button">Shop Now</a>
+            </div>
+        </section>
 
-  <!-- Banner Section -->
-  <section class="banner">
-    <div class="banner-content">
-      <h2>Discover Your Next Adventure</h2>
-      <p>Thousands of books waiting to be explored</p>
-      <a href="books.html" class="btn">Browse Collection</a>
-    </div>
-  </section>
+        <section aria-labelledby="featured-books-heading">
+            <h2 id="featured-books-heading" class="visually-hidden">Featured Books</h2>
+            <div class="book-list">
+                <article class="book">
+                    <h3 class="book-title"></h3>
+                </article>
+            </div>
+        </section>
 
-  <main>
-    <section id="book-list" class="book-list">
-      <p>Loading books...</p>
-    </section>
-  </main>
+        <div id="more_books">
+            <p><a href="books.html">More Books?</a></p>
+        </div>
+    </main>
 
-  <footer>
-    <p>&copy; 2025 Online Bookstore. All rights reserved.</p>
-  </footer>
+    <footer>
+        <p>&copy; <span class="current-year"></span> NOVELLA</p>
+    </footer>
 
+    <script>
+        document.querySelector('.current-year').textContent = new Date().getFullYear(); //Modified laterly!
+    </script>
 </body>
 </html>

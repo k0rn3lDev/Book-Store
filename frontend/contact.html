@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact Us</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  
+    <script src="js/script.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/animation.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>NOVELLA</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="books.html">Books</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Log in</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Get in Touch</h2>
+            
+            <h3>Visit Us</h3>
+            <address>
+                123 Book Lane<br>
+                Assuit => Helaly Street<br>
+                <a href="tel:+15551234567">(555) 123-4567</a><br>
+                <a href="mailto:info@bookstore.com">info@bookstore.com</a>
+            </address>
+
+            <h3>Store Hours</h3>
+            <ul>
+                <li>Monday–Friday: 9AM–7PM</li>
+                <li>Saturday: 10AM–8PM</li>
+                <li>Sunday: 11AM–5PM</li>
+            </ul>
+
+            <h3>Send a Message</h3>
+            <form action="/submit-contact" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Subject:</label>
+                <select id="subject" name="subject">
+                    <option value="general">General Inquiry</option>
+                    <option value="events">Event Booking</option>
+                    <option value="orders">Order Support</option>
+                </select>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Book Store. All rights reserved.</p>
+    </footer>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>About Us - Book Store</title>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+
+  <script src="js/script.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/animation.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <h1>BOOK STORE</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="books.html">Books</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Log in</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="about-section">
+      <h2>About Our Bookstore</h2>
+      <p>
+        Welcome to Book Store, your go-to destination for discovering amazing books across all genres.
+        Whether you're a lifelong reader or just beginning your journey, we aim to offer something special for everyone.
+      </p>
+      <p>
+        Our store is built by passionate readers who believe in the power of stories and knowledge. We offer handpicked collections,
+        top-selling titles, and rare finds all in one place.
+      </p>
+    </section>
+
+    <section class="mission-section">
+      <h2>Our Mission</h2>
+      <p>
+        To inspire a love of reading by making books accessible, affordable, and enjoyable for readers of all ages.
+      </p>
+    </section>
+
+    <section class="team-section">
+      <h2>Meet the Team</h2>
+      <ul>
+        <li><strong>Yassien</strong> – Founder & Full-Stack Engineer</li>
+        <li><strong>Amira</strong> – UI/UX Designer</li>
+        <li><strong>Khaled</strong> – Content Creator</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span class="current-year"></span> Book Store. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.querySelector(".current-year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
