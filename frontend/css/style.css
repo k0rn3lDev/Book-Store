@@ -250,10 +250,110 @@ footer {
   }
   
   .team-section li img {
-    width: 100px;               /* حجم موحد أكبر قليلاً */
+    width: 100px;               
     height: 100px;
     object-fit: cover;
     border-radius: 50%;
   }
-  
+
+  /* ==============================
+   Contact Page Styles (Scoped)
+   Applies only within <main id="contact-page">
+   ============================== */
+#contact-page * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#contact-page {
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #fff;    /* white background for the card */
+  border-radius: 8px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  max-width: 800px;
+  margin: 3rem auto;
+}
+
+#contact-page h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#contact-page h3 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+#contact-page address {
+  font-style: normal;
+  line-height: 1.8;
+  font-size: 1.125rem;
+}
+
+#contact-page address a {
+  color: #0077cc;
+  text-decoration: none;
+}
+#contact-page address a:hover {
+  text-decoration: underline;
+}
+
+#contact-page ul {
+  list-style: none;
+  display: grid;
+  gap: 0.5rem;
+  font-size: 1.125rem;
+}
+#contact-page ul li::before {
+  content: "•";
+  color: #0077cc;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+#contact-page form {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+#contact-page form label {
+  font-size: 1.125rem;
+}
+#contact-page form input,
+#contact-page form select,
+#contact-page form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  transition: border-color 0.2s ease;
+}
+#contact-page form input:focus,
+#contact-page form select:focus,
+#contact-page form textarea:focus {
+  border-color: #0077cc;
+  outline: none;
+}
+#contact-page form button {
+  width: fit-content;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.125rem;
+  background-color: #0077cc;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+#contact-page form button:hover {
+  background-color: #005fa3;
+}
+
   
