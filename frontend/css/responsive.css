@@ -1,0 +1,28 @@
+/* Responsive Adjustments */
+@media (max-width: 900px) {
+    .book-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        padding: 20px;
+    }
+    
+    nav ul {
+        margin-top: 20px;
+        gap: 15px;
+    }
+    
+    .book-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 400px) {
+    .book-list {
+        grid-template-columns: 1fr;
+    }
+}
