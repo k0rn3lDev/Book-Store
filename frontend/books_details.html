@@ -2,28 +2,62 @@
 <html lang="en">
 <head>
   <title>Book Details</title>
-
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-   <!-- <link rel="stylesheet" href="css/style.css" /> -->
-   <link rel="stylesheet" href="css/responsive.css" />
-  
-   <script src="js/script.js"></script>
-   <script src="js/validation.js"></script>
-   <script src="js/animation.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/book-details.css" />
+
+  <script src="js/main.js"></script>
+  <script src="js/validation.js"></script>
+  <script src="js/animation.js"></script>
 </head>
 <body>
+
   <header>
     <h1>NOVELLA</h1>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="books.html">Books</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="books.html">Books</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Log in</a></li>
+    </ul>
     </nav>
   </header>
 
-  <main>
-    <section id="book-detail"></section>
+  <main id="book-detail-page">
+    <!-- Two-column detail card -->
+    <div class="detail-card">
+      <div class="left-col">
+        <img id="book-cover" src="assets/placeholder.jpg" alt="Book Cover">
+      </div>
+      <div class="right-col">
+        <h2 id="book-title">Book Title Here</h2>
+        <p id="book-author" class="author">by Author Name</p>
+        <p id="book-price" class="price">$19.99</p>
+        <button id="buy-button">Buy Now</button>
+        <div id="book-description" class="description">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vitae sapien nec urna vulputate mollis.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Related Books -->
+    <section class="related-books">
+      <h3>Related Books</h3>
+      <div class="related-list">
+        <!-- Repeat this block via JS -->
+        <div class="related-item">
+          <img src="assets/placeholder-sm.jpg" alt="Related Book">
+          <p class="rel-title">Other Title</p>
+          <p class="rel-author">Author Name</p>
+        </div>
+        <!-- ... -->
+      </div>
+    </section>
   </main>
+
 </body>
 </html>
